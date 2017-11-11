@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500" prefWidth="900" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller3">
+    <Label layoutX="144.0" layoutY="207.0" text="Request is being sent, please wait.">
+        <font>
+            <Font size="40" />
+        </font>
+    </Label>
+
+</AnchorPane>

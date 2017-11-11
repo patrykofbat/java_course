@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller4">
+
+    <top>
+        <HBox>
+            <padding>
+                <Insets bottom="30" left="30" top="30" />
+            </padding>
+        <ComboBox fx:id="comboBox" onMouseClicked="#comboBoxHandle" />
+        </HBox>
+    </top>
+    <left>
+        <VBox alignment="CENTER" prefHeight="415.0" prefWidth="262.0">
+            <padding>
+                <Insets bottom="30" left="30" right="30" top="30" />
+            </padding>
+            <ImageView fx:id="img" />
+        </VBox>
+    </left>
+    <right>
+        <HBox alignment="CENTER" prefHeight="415.0" prefWidth="602.0">
+            <padding>
+                <Insets bottom="30" left="30" right="30" top="30" />
+            </padding>
+            <BarChart fx:id="barChart" prefHeight="363.0" prefWidth="485.0">
+                <xAxis>
+                    <CategoryAxis side="LEFT" fx:id="xAxis" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis fx:id="yAxis" prefHeight="314.0" prefWidth="22.0" side="BOTTOM" />
+                </yAxis>
+            </BarChart>
+        </HBox>
+    </right>
+
+
+
+
+</BorderPane>

@@ -1,45 +1,103 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
-
+<?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.ColumnConstraints?>
-
-<?import javafx.scene.layout.HBox?>
-
-
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<HBox fx:controller="sample.Controller"
-         xmlns:fx="http://javafx.com/fxml" alignment="bottom_right"
-         style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed" fx:id="Hbox"
-         spacing="10">
-    <padding>
-        <Insets bottom="10" right="10"/>
-    </padding>
-    <Button text="Okay" prefWidth="90" />
-    <Button text="Cancel" prefWidth="90"/>
-    <Button text="Help" prefWidth="90"/>
-
-</HBox>
+<?import javafx.scene.layout.GridPane?>
+<VBox fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml">
+    <Button fx:id="btn1" text="Button One" onAction="#handleSubmitButtonAction" style="-fx-background-color: red"/>
+    <Label fx:id="label1" text="label"/>
 
 
-    <!--<GridPane fx:controller="sample.Controller"-->
-    <!--xmlns:fx="http://javafx.com/fxml" alignment="top_center" hgap="10" vgap="10" gridLinesVisible="true">-->
-    <!--<padding>-->
-    <!--<Insets top ="50"/>-->
-    <!--</padding>-->
+</VBox>
 
-    <!--<columnConstraints>-->
-    <!--order is impotant we set for each other separately in order-->
-    <!--<ColumnConstraints percentWidth="50"/>-->
-    <!--<ColumnConstraints percentWidth="50"/>-->
-    <!--</columnConstraints>-->
 
-    <!--<Button text ="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"-->
-    <!--GridPane.halignment="RIGHT"/>-->
-    <!--<Button text ="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>-->
-    <!--<Button text ="Button Three" GridPane.rowIndex="1" GridPane.columnIndex="0"/>-->
-    <!--<Button text ="Really Long Button Four " GridPane.rowIndex="3" GridPane.columnIndex="0"-->
-    <!--GridPane.columnSpan="2"/>-->
-    <!--<Button text ="Button Five" GridPane.rowIndex="2" GridPane.columnIndex="0"/>-->
-    <!--</GridPane>-->
+
+
+
+
+<!--<?import javafx.scene.layout.FlowPane?>-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.layout.VBox?>-->
+<!--<?import javafx.scene.layout.TilePane?>-->
+<!--<TilePane fx:controller="sample.Controller"-->
+          <!--xmlns:fx="http://javafx.com/fxml">-->
+    <!--<Button text="Button One"/>-->
+    <!--<Button text="Button Two"/>-->
+    <!--<Button text="Button Three"/>-->
+    <!--<Button text="Button Four"/>-->
+    <!--<Button text="Button Five"/>-->
+    <!--<Button text="Button Six"/>-->
+    <!--<Button text="Button Seven"/>-->
+    <!--<Button text="Button Eight"/>-->
+    <!--<Button text="Button Nine"/>-->
+    <!--<Button text="Button Ten"/>-->
+<!--</TilePane>-->
+
+
+<!--VBox vs FlowPane(Vertical) - Vbox hidding item flowpane trying to fit in next row-->
+<!--HBox vs FlowPane(Horizontal) - same as above but just columns-->
+
+
+<!--<?import javafx.geometry.Insets?>-->
+<!--<?import javafx.scene.layout.GridPane?>-->
+
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.layout.ColumnConstraints?>-->
+
+<!--<?import javafx.scene.layout.HBox?>-->
+
+<!--<?import javafx.scene.layout.BorderPane?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.geometry.Insets?>-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<BorderPane fx:controller="sample.Controller"-->
+            <!--xmlns:fx="http://javafx.com/fxml">-->
+    <!--<top>-->
+        <!--<Label text="This label is top position" alignment="CENTER" BorderPane.alignment="center"-->
+               <!--style="-fx-border-color: blue; -fx-border-style: dashed; -fx-border-width: 3"/>-->
+    <!--</top>-->
+    <!--<center>-->
+        <!--<Label text="This label is in the center position and has really looooooooooooooooooooooooong text"/>-->
+    <!--</center>-->
+    <!--<left>-->
+        <!--<Label text="This label is in the left position"  alignment="center"/>-->
+    <!--</left>-->
+    <!--<right>-->
+        <!--<Label text="This label is the right position"/>-->
+    <!--</right>-->
+    <!--<bottom>-->
+        <!--<HBox spacing="10" alignment="TOP_RIGHT">-->
+            <!--<padding>-->
+                <!--<Insets bottom="10" right="10"/>-->
+            <!--</padding>-->
+            <!--<Button text="Okay" prefWidth="90"/>-->
+            <!--<Button text="Cancel" prefWidth="90"/>-->
+            <!--<Button text="Help" prefWidth="90"/>-->
+        <!--</HBox>-->
+    <!--</bottom>-->
+<!--</BorderPane>-->
+
+
+        <!--<GridPane fx:controller="sample.Controller"-->
+        <!--xmlns:fx="http://javafx.com/fxml" alignment="top_center" hgap="10" vgap="10" gridLinesVisible="true">-->
+        <!--<padding>-->
+        <!--<Insets top ="50"/>-->
+        <!--</padding>-->
+
+        <!--<columnConstraints>-->
+        <!--order is impotant we set for each other separately in order-->
+        <!--<ColumnConstraints percentWidth="50"/>-->
+        <!--<ColumnConstraints percentWidth="50"/>-->
+        <!--</columnConstraints>-->
+
+        <!--<Button text ="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"-->
+        <!--GridPane.halignment="RIGHT"/>-->
+        <!--<Button text ="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>-->
+        <!--<Button text ="Button Three" GridPane.rowIndex="1" GridPane.columnIndex="0"/>-->
+        <!--<Button text ="Really Long Button Four " GridPane.rowIndex="3" GridPane.columnIndex="0"-->
+        <!--GridPane.columnSpan="2"/>-->
+        <!--<Button text ="Button Five" GridPane.rowIndex="2" GridPane.columnIndex="0"/>-->
+        <!--</GridPane>-->
