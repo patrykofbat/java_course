@@ -24,10 +24,14 @@ public class Controller {
     @FXML
     Label label1;
 
+    public void initialize() {
+        txtFld.setText("18cfe2137533995d874996339ba37b53");
+    }
+
     @FXML
-    protected void handleSubmit(ActionEvent event)throws Exception{
+    protected void handleSubmit(ActionEvent event) throws Exception {
         Main.apiKey = this.txtFld.getText();
-        Stage stage = (Stage)this.btn1.getScene().getWindow();
+        Stage stage = (Stage) this.btn1.getScene().getWindow();
 
 //        TranslateTransition tt1 = new TranslateTransition(Duration.millis(1500), this.btn1);
 //        tt1.setByX(-795);
@@ -43,9 +47,6 @@ public class Controller {
         Pane root = FXMLLoader.load(getClass().getResource("sample_2.fxml"));
         Scene scene = new Scene(root, 900, 500);
         stage.setScene(scene);
-
-
-
 
 
     }

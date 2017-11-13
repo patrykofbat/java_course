@@ -37,7 +37,7 @@ public class Controller2 {
         stage.setScene(scene);
         Platform.runLater(()->{
             try{
-                Thread.sleep(5000);
+                Thread.sleep(10000);
                 IndicoImageClassification classificator = new IndicoImageClassification();
                 if(classificator.classify(Main.chosenDirPath, Main.apiKey)){
                     Pane root_2 = FXMLLoader.load(getClass().getResource("sample_4.fxml"));

@@ -10,6 +10,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class IndicoImageClassification {
 
@@ -59,10 +61,13 @@ public class IndicoImageClassification {
             Map<String, Double> sortedResult = new HashMap<>();
             for(Map.Entry<String, Double> entry: k.entrySet()){
                 if(entry.getValue() > 0.005){
-                    sortedResult.put(entry.getKey(), entry.getValue());
-                    listResultSorted.add(sortedResult);
+                    Pattern patten = Pattern.compile("([\\w ]+)([,]?)([\\w ]+)");
+                    Matcher m = patten.matcher(entry.getKey());
+                    m.find();
+                    sortedResult.put((m.group(1)+" ..."), entry.getValue());
                 }
             }
+            listResultSorted.add(sortedResult);
         }
 
         Main.results = listResultSorted;

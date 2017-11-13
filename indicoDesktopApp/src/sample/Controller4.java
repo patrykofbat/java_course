@@ -73,6 +73,7 @@ public class Controller4 implements Initializable{
         XYChart.Series series1 = new XYChart.Series();
         series1.setName("Value");
 
+
         for (Map.Entry<String, Double> k :map.entrySet()){
             series1.getData().add(new XYChart.Data<String, Number>(k.getKey(),k.getValue()));
         }
